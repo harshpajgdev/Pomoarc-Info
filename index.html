@@ -1,0 +1,145 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomoarc</title>
+    <meta name="description" content="Stripped-back focus timer for iOS. Three colors. No distractions.">
+    <meta name="theme-color" content="#000000">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'SF Mono', 'Menlo', 'Courier New', Courier, monospace;
+            background: #000;
+            color: #FFF;
+            line-height: 1.9;
+            font-size: 14px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        main {
+            max-width: 580px;
+            margin: 0 auto;
+            padding: 96px 24px 72px;
+        }
+
+        .title {
+            color: #FF8C00;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 8px;
+            margin-bottom: 6px;
+        }
+
+        .version {
+            font-size: 12px;
+            color: #333;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .tagline {
+            color: #777;
+            margin-bottom: 72px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #1A1A1A;
+            margin: 44px 0;
+        }
+
+        h2 {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #444;
+            margin-bottom: 18px;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 0;
+        }
+
+        ul li {
+            padding: 3px 0;
+            color: #CCC;
+        }
+
+        ul li span.key {
+            color: #FFF;
+        }
+
+        ul li::before {
+            content: '> ';
+            color: #333;
+        }
+
+        p {
+            color: #999;
+        }
+
+        a {
+            color: #FF8C00;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #FF8C00;
+        }
+
+        .footer {
+            color: #222;
+            font-size: 12px;
+            margin-top: 72px;
+            padding-top: 24px;
+            border-top: 1px solid #111;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="title">POMOARC</div>
+        <div class="version">v1.0.0</div>
+        <p class="tagline">Stripped-back focus timer. Three colors. No noise.</p>
+
+        <h2>How It Works</h2>
+        <ul>
+            <li><span class="key">Focus</span> for 25 minutes. One orange arc. One countdown.</li>
+            <li><span class="key">Hydrate</span> for 5 minutes. Step away. Drink water.</li>
+            <li><span class="key">Rest</span> for 20 minutes after four cycles. Reset.</li>
+        </ul>
+
+        <hr>
+
+        <h2>Under the Hood</h2>
+        <ul>
+            <li>State-isolated rendering. Zero stutter at 60fps.</li>
+            <li>SwiftData persistence. All data lives on-device.</li>
+            <li>GPU-offloaded arc via <span class="key">drawingGroup()</span>.</li>
+            <li>Low Power Mode aware. Shadows and glow disabled automatically.</li>
+        </ul>
+
+        <hr>
+
+        <h2>Privacy</h2>
+        <p>Pomoarc does not phone home. No analytics, no accounts, no cloud sync. Your session history is stored locally on your device and never leaves it.</p>
+
+        <hr>
+
+        <h2>Support</h2>
+        <p>Questions or feedback — <a href="mailto:harshpajg.dev@gmail.com">harshpajg.dev@gmail.com</a></p>
+
+        <div class="footer">Build 2026 &middot; Made in India</div>
+    </main>
+</body>
+</html>
+```
+
+Copy and paste this directly into your GitHub Pages `index.html`.
